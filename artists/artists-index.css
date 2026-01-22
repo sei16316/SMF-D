@@ -1,0 +1,47 @@
+/* グリッド全体のレイアウト */
+.grid.cards.artists {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 24px;
+  padding: 40px 20px;
+}
+
+/* 各カードのスタイル */
+.card.artist {
+  display: flex;
+  flex-direction: column;
+  background-color: #fff;
+  border-radius: 12px;
+  overflow: hidden;
+  text-decoration: none;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.card.artist:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 6px 16px rgba(0,0,0,0.15);
+}
+
+/* アーティスト画像 */
+.card.artist img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+
+/* テキスト部分 */
+.card.artist div {
+  padding: 16px;
+}
+
+.card.artist h3 {
+  font-size: 1.2rem;
+  margin: 0 0 8px;
+  color: #333;
+}
+
+.card.artist .genre {
+  font-size: 0.9rem;
+  color: #666;
+}

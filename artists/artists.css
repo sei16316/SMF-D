@@ -1,0 +1,123 @@
+/* ------------------------------
+   基本レイアウト
+------------------------------ */
+
+body {
+  margin: 0;
+  font-family: "Noto Sans JP", sans-serif;
+  line-height: 1.7;
+  color: #222;
+  background: #fafafa;
+}
+
+main {
+  padding: 2rem 1.5rem;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+a {
+  color: #0077cc;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+/* ------------------------------
+   アーティスト詳細
+------------------------------ */
+
+.artist-detail {
+  background: #fff;
+  padding: 2rem;
+  border-radius: 12px;
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.08);
+}
+
+.artist-detail img {
+  width: 100%;
+  max-height: 380px;
+  object-fit: cover;
+  border-radius: 10px;
+  margin-bottom: 1.5rem;
+}
+
+.artist-detail h1 {
+  font-size: 2rem;
+  margin-bottom: 0.5rem;
+  font-weight: 700;
+}
+
+.artist-detail p {
+  margin: 0.4rem 0 1rem;
+}
+
+.artist-detail strong {
+  font-weight: 600;
+}
+
+/* ------------------------------
+   セクション
+------------------------------ */
+
+.artist-detail section {
+  margin-top: 2rem;
+}
+
+.artist-detail h2 {
+  font-size: 1.4rem;
+  margin-bottom: 0.6rem;
+  border-left: 4px solid #ff7b7b;
+  padding-left: 0.6rem;
+  font-weight: 700;
+}
+
+.artist-detail ul,
+.artist-detail ol {
+  padding-left: 1.2rem;
+  margin: 0.5rem 0 1rem;
+}
+
+.artist-detail li {
+  margin-bottom: 0.4rem;
+}
+
+/* ------------------------------
+   戻るリンク
+------------------------------ */
+
+.artist-detail>p:last-child {
+  margin-top: 2.5rem;
+  text-align: right;
+}
+
+.artist-detail>p:last-child a {
+  font-weight: 600;
+}
+
+/* ------------------------------
+   レスポンシブ
+------------------------------ */
+
+@media (min-width: 768px) {
+  .artist-detail {
+    padding: 3rem;
+  }
+
+  .artist-detail h1 {
+    font-size: 2.4rem;
+  }
+
+  .artist-detail h2 {
+    font-size: 1.6rem;
+  }
+}
+
+p {
+  font-family: "Noto Sans JP", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 100;
+  font-style: normal;
+}

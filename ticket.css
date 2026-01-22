@@ -26,3 +26,7 @@ table{
 .red{
     color: red;
 }
+
+body {
+  font-family: 'Noto Sans JP', sans-serif;
+}

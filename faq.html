@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <link rel="stylesheet" href="index-style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100;300;400;500;700;900&display=swap"
+        rel="stylesheet">
+    <title>SMF-D</title>
+    <style>
+        header {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            z-index: 1000;
+        }
+
+        body {
+            padding-top: 10px;
+            font-family: 'Noto Sans JP', sans-serif;
+        }
+
+        .details {
+            transition: .3s;
+            overflow: hidden;
+            margin-top: -10px;
+            padding-bottom: 20px;
+
+            &:last-of-type {
+                margin-bottom: 0;
+            }
+        }
+
+        .details[open] {
+            margin-top: 0;
+            padding-bottom: 10px;
+        }
+
+        .details-summary {
+            display: block;
+            padding: 15px;
+            transition: .3s;
+            transform: translateY(10px);
+            background-color: #00a5a0;
+            font-size: 20px;
+            font-weight: bold;
+            color: #fff;
+
+            &:hover {
+                cursor: pointer;
+            }
+        }
+
+        .details-summary::-webkit-details-marker {
+            display: none;
+        }
+
+        .details[open] .details-summary {
+            transform: translateY(0);
+        }
+
+        .details-content {
+            padding: 20px;
+            background-color: #bee1de;
+            border-bottom: 2px solid #00a5a0;
+            border-left: 2px solid #00a5a0;
+            border-right: 2px solid #00a5a0;
+        }
+
+        .A {
+            color: red;
+        }
+
+        h2 {
+            font-size: 24px;
+            font-weight: 700;
+            margin: 60px 0 25px;
+            padding: 12px 20px;
+            background-color: #e6f5f4;
+            border-left: 6px solid #00a5a0;
+            border-radius: 6px;
+        }
+    </style>
+</head>
+
+<header>
+    <nav class="navbar navbar-expand-lg ">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="index.html">Spring Music Festival 2026</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link C" href="timetable.html">タイムテーブル</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link C" href="artists/index.html">出演者一覧</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link C" href="ticket.html">チケット情報</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link C" href="goods.html">グッズ紹介</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link C" href="guide.html">来場者ガイド</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+</header>
+
+<body>
+    <div class="container" id="A">
+        <h2>チケットについて</h2>
+        <details class="details">
+            <summary class="details-summary">Q1.チケットは当日券もありますか？</summary>
+            <p class="details-content">
+                <span class="A">A.</span>
+                はい、前売り券が完売していない場合のみ、当日券を販売いたします。ただし、数に限りがありますので、事前に前売り券をご購入いただくことを強くおすすめします。<br>
+                当日券の販売状況は、公式サイトおよびSNSで当日朝9時にお知らせします。
+            </p>
+        </details>
+        <details class="details">
+            <summary class="details-summary">Q2.チケットの転売は可能ですか？</summary>
+            <p class="details-content">
+                <span class="A">A.</span>
+                公式チケット販売サイト以外での転売は固く禁じられています。転売チケットでのご入場はお断りし、チケット代金の払い戻しもいたしかねます。やむを得ず参加できなくなった場合は、公式リセールサービスをご利用ください。
+            </p>
+        </details>
+        <details class="details">
+            <summary class="details-summary">Q3.小学生以下は本当に無料ですか？</summary>
+            <p class="details-content">
+                <span class="A">A.</span>
+                はい、小学生以下のお子様は保護者同伴の場合に限り無料でご入場いただけます。ただし、保護者の方は有料チケットが必要です。また、お子様だけでのご入場はできませんので、必ず保護者の方とご一緒にお越しください。
+            </p>
+        </details>
+        <h2>入場・開場について</h2>
+        <details class="details">
+            <summary class="details-summary">Q4.再入場は可能ですか？</summary>
+            <p class="details-content">
+                <span class="A">A.</span>
+                はい、再入場可能です。退場時に手の甲に再入場スタンプを押印いたします。再入場の際は、スタンプとチケット(または購入確認メール)をスタッフにご提示ください。スタンプが消えてしまった場合は再入場できませんのでご注意ください。
+            </p>
+        </details>
+        <details class="details">
+            <summary class="details-summary">Q5.開場時間は何時ですか？</summary>
+            <p class="details-content">
+                <span class="A">A.</span>
+                両日とも10:30開場予定です。開演(最初のアーティストのステージ開始)は11:00からとなります。混雑が予想されますので、時間に余裕を持ってお越しください。
+            </p>
+        </details>
+        <details class="details">
+            <summary class="details-summary">Q6.会場内に荷物を預ける場所はありますか？</summary>
+            <p class="details-content">
+                <span class="A">A.</span>
+                はい、有料のクロークサービスをご用意しております(1個500円)。ただし、貴重品はお預かりできませんので、各自で管理をお願いいたします。大きなお荷物はできるだけ持ち込まず、事前にコインロッカー等をご利用いただくことをおすすめします。
+            </p>
+        </details>
+        <h2>飲食について</h2>
+        <details class="details">
+            <summary class="details-summary">Q7.食べ物や飲み物の持ち込みはできますか？</summary>
+            <p class="details-content">
+                <span class="A">A.</span>
+                ペットボトルや水筒などの飲み物の持ち込みは可能です。ただし、ビン・カン類の持ち込みは破損の危険があるため禁止です。食べ物の持ち込みも可能ですが、会場内にはフードコート(10店舗)がございますので、ぜひご利用ください。
+            </p>
+        </details>
+        <details class="details">
+            <summary class="details-summary">Q8.会場内で食事はできますか？</summary>
+            <p class="details-content">
+                <span class="A">A.</span>
+                はい、フードコートエリアに10店舗の飲食ブースを設置しております。ハンバーガー、タコス、カレー、クレープなど多様なメニューをご用意しています。価格帯は500円〜1,200円程度です。キャッシュレス決済も可能です。
+            </p>
+        </details>
+        <h2>その他</h2>
+        <details class="details">
+            <summary class="details-summary">Q9.雨が降った場合はどうなりますか？</summary>
+            <p class="details-content">
+                <span class="A">A.</span>
+                小雨の場合は決行いたします。ステージには屋根がございますが、観客エリアは屋外のため、レインコートや雨具をご持参ください。荒天(台風、雷雨など)の場合は中止となる可能性があります。開催可否は前日18時に公式サイトおよびSNSで発表いたします。
+            </p>
+        </details>
+        <details class="details">
+            <summary class="details-summary">Q10.駐車場の予約方法は？</summary>
+            <p class="details-content">
+                <span class="A">A.</span>
+                会場には100台分の無料駐車場がございますが、事前予約制となっております。ご予約は公式サイトの専用フォームから、4月15日(水)10:00より先着順で受け付けます。満車の場合は近隣のコインパーキングをご利用ください。なるべく公共交通機関でのご来場をお願いいたします。
+            </p>
+        </details>
+    </div>
+
+    <footer>
+        <nav>
+            <ul>
+                <li><a href="faq.html">よくある質問</a></li>
+                <li><a href="access.html">会場案内</a></li>
+                <li><a href="contact.html">お問い合わせフォーム</a></li>
+                <li><a href="privacy.html">プライバシーポリシー</a></li>
+            </ul>
+        </nav>
+    </footer>
+</body>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
+    crossorigin="anonymous"></script>
+
+</html>

@@ -1,0 +1,402 @@
+<!DOCTYPE html>
+<html lang="ja" style="height: 100%;
+  margin: 0;">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <link rel="stylesheet" href="index-style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700&display=swap" rel="stylesheet">
+
+    <title>SMF-D</title>
+</head>
+
+<style>
+
+body{
+  font-family: 'Noto Sans JP', sans-serif;
+}
+a {
+  color: #0d6efd;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+
+#A {
+  gap: 2rem;
+  align-items: flex-start;
+}
+
+.left_column {
+  background: #ffffff;
+  padding: 1.5rem;
+  border-radius: 12px;
+  box-shadow: 0 4px 16px rgba(0,0,0,0.05);
+}
+
+.left_column h1 {
+  font-size: 1.2rem;
+  margin-bottom: 1rem;
+}
+
+.left_column ul {
+  list-style: none;
+  padding-left: 0;
+  margin: 0;
+}
+
+.left_column li {
+  margin-bottom: 0.5rem;
+}
+
+.left_column a {
+  font-size: 0.95rem;
+}
+
+.right_column {
+  background: #ffffff;
+  padding: 2rem;
+  border-radius: 16px;
+  box-shadow: 0 6px 20px rgba(0,0,0,0.06);
+  max-width: 100%;
+}
+
+.right_column h1 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+.right_column h2 {
+  font-size: 1.1rem;
+  color: #555;
+  margin-bottom: 2rem;
+}
+
+.right_column h3 {
+  font-size: 1.4rem;
+  margin-top: 3rem;
+  margin-bottom: 1rem;
+  border-left: 6px solid #0d6efd;
+  padding-left: 0.75rem;
+}
+
+.right_column h4 {
+  font-size: 1.1rem;
+  margin-top: 1.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.right_column ul,
+.right_column ol {
+  padding-left: 1.5rem;
+}
+
+.right_column li {
+  margin-bottom: 0.5rem;
+}
+.font{
+     font-family: 'Noto Sans JP', sans-serif;
+}
+.right_column hr {
+  margin: 3rem 0;
+}
+
+
+
+@media (max-width: 768px) {
+  footer ul {
+    flex-direction: row; 
+    flex-wrap: wrap;  
+  }
+  #A {
+    flex-direction: column;
+  }
+
+  .left_column {
+    width: 100% !important;
+    position: static !important;
+    top: auto;
+  }
+
+  .left_column h1 {
+    font-size: 1.1rem;
+  }
+
+  .right_column {
+    padding: 1.5rem 1.2rem;
+  }
+
+  .right_column h1 {
+    font-size: 1.6rem;
+  }
+
+  .right_column h3 {
+    font-size: 1.25rem;
+  }
+
+
+}
+
+</style>
+<body style="  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  height: 100%;
+  margin: 0;"
+  >
+<header>
+    <nav class="navbar navbar-expand-lg ">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">Spring Music Festival 2026</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link C" href="timetable.html">タイムテーブル</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link C" href="artists/index.html">出演者一覧</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link C" href="ticket.html">チケット情報</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link C" href="goods.html">グッズ紹介</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link C" href="guide.html">来場者ガイド</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+</header>
+    <div class="container " id="A" style="display:flex;">
+        <div class="left_column font" style="  width: 260px;
+  flex-shrink: 0;   position: sticky;
+  top: 80px;  height: fit-content;">
+            <h1>目次</h1>
+            <ul>
+                <li>
+                    <a href="#mono">持ち物リスト</a>
+                </li>
+                <li>
+                    <a href="#kinshi">禁止事項</a>
+                </li>
+                <li>
+                    <a href="#ame">雨天時の対応</a>
+                </li>
+                <li>
+                    <a href="#sonota">その他の注意事項</a>
+                </li>
+                <li>
+                    <a href="#mana-">会場での過ごし方(マナー)</a>
+                </li>
+                <li>
+                    <a href="#otoiawase">お問い合わせ</a>
+                </li>
+            </ul>
+        </div>
+        <div class="right_column">
+            <h1>来場者ガイド</h1>
+<h2>Spring Music Festival 2026を安全に、そして思いっきり楽しんでいただくための情報をまとめました。
+ご来場前に必ずご確認ください。</h2>
+
+
+---<br>
+<h3 id="mono">持ち物リスト<br>
+必須の持ち物<br>
+以下のものは必ずお持ちください。<br></h3>
+
+
+- チケット(印刷したもの、またはスマートフォンに購入確認メールを保存)<br>
+- 身分証明書(年齢確認が必要な場合があります)<br>
+- 現金(会場内でキャッシュレス決済も可能ですが、念のためご用意ください)<br>
+- スマートフォン(連絡用、最新情報確認用)<br>
+<h3>おすすめの持ち物<br></h3>
+より快適にお過ごしいただくため、以下のものをおすすめします。<br>
+<h4>日差し対策<br></h4>
+
+- 日焼け止め(野外での長時間の観覧に備えて)<br>
+- 帽子・キャップ(熱中症予防に)<br>
+- サングラス<br>
+<h4>雨天対策<br></h4>
+
+- レインコート・ポンチョ(傘は周りの方の迷惑になるため使用禁止です)<br>
+- 長靴またはレインシューズ(雨天時は足元が悪くなります)<br>
+- タオル(汗拭き・雨天時両用)<br>
+<h4>その他<br></h4>
+
+- レジャーシート(休憩エリアでご利用いただけます)<br>
+- 飲み物(ペットボトル・水筒OK。会場内でも販売しています)<br>
+- モバイルバッテリー(スマートフォンの充電用)<br>
+- ウェットティッシュ・除菌シート<br>
+- ゴミ袋(ゴミは各自でお持ち帰りください)<br>
+- 着替え(汗や雨で濡れた場合に備えて)<br>
+- 常備薬(必要な方は忘れずに)<br>
+- 耳栓(大音量が苦手な方)<br>
+---<br>
+<h3 id="kinshi">禁止事項<br></h3>
+
+皆様に安全で快適にイベントをお楽しみいただくため、以下の行為を禁止させていただきます。<br>
+違反が確認された場合は、ご退場いただく場合がございます。<br>
+<h4>持ち込み禁止物<br></h4>
+
+- 危険物(刃物、花火、爆竹、スプレー缶など)<br>
+- ビン・カン類(破損の危険があるため。ペットボトルはOK)<br>
+- アルコール類の持ち込み(会場内で販売しております)<br>
+- 違法薬物<br>
+- テント・タープ(他のお客様の視界を妨げるため)<br>
+- 大型の荷物(キャリーケースなど。クロークをご利用ください)<br>
+- 椅子・脚立(折りたたみ椅子含む)<br>
+- 長い傘・日傘(周りの方の迷惑になります)<br>
+<h4>禁止行為<br></h4>
+
+- ペット同伴(盲導犬・介助犬を除く)<br>
+- 喫煙(指定喫煙所以外での喫煙)<br>
+- 録音・録画(動画撮影、音声録音は固く禁止します)<br>
+- 写真撮影(個人で楽しむ範囲の写真撮影は可能ですが、自撮り棒・三脚の使用は禁止)<br>
+- 無許可の物販・チラシ配布<br>
+- 場所取りのための長時間の放置<br>
+- 危険行為(モッシュ、ダイブ、リフトなど)<br>
+- 他のお客様への迷惑行為(大声での会話、割り込みなど)<br>
+
+---<br>
+
+<h3 id="ame">雨天時の対応<br></h3>
+<h4>開催基準<br></h4>
+
+- 小雨の場合：決行いたします<br>
+- 荒天の場合(台風、雷雨、強風など)：中止となる場合があります<br>
+- 開催可否の判断<br>
+- 判断時期：開催前日の18:00<br>
+- 発表方法：<br>
+  - 公式サイト(トップページにお知らせ掲載)<br>
+  - 公式X(@springmusicfes2026)<br>
+  - 公式Instagram(@springmusicfes2026)<br>
+  - チケット購入時のメールアドレスへ通知<br>
+  <h4>中止の場合<br></h4>
+
+- チケット代金の払い戻しを実施いたします<br>
+- 払い戻し方法については、公式サイトおよびメールでお知らせします<br>
+- 交通費・宿泊費等の払い戻しはできませんので、予めご了承ください<br>
+<h4>当日の雨天対策<br></h4>
+
+- ステージには屋根がありますが、観客エリアは屋外です<br>
+- レインコート・ポンチョを必ずご持参ください<br>
+- 傘の使用は禁止です(周りの方の迷惑になるため)<br>
+- 足元が悪くなりますので、長靴やレインシューズの着用をおすすめします<br>
+
+---<br>
+<h3 id="sonota">その他の注意事項<br></h3>
+<h4>服装について<br></h4>
+
+- 野外での長時間の観覧となりますので、動きやすく汚れても良い服装でお越しください<br>
+- ヒールの高い靴は足元が不安定になりますので、スニーカーなど歩きやすい靴をおすすめします<br>
+- 5月は気温差が大きい季節です。上着やカーディガンなど調節できる服装をご用意ください<br>
+<h4>熱中症対策<br></h4>
+
+- 5月でも日差しが強く、熱中症の危険があります<br>
+- こまめな水分補給、日陰での休憩を心がけてください<br>
+- 体調が悪くなった場合は、すぐにスタッフまでお声がけください<br>
+- 会場内に救護テントを設置しています<br>
+<h4>ゴミについて<br></h4>
+
+- ゴミは各自でお持ち帰りください<br>
+- 環境保護のため、ご協力をお願いいたします<br>
+- ゴミ袋を1枚お持ちいただくと便利です<br>
+<h4>貴重品の管理<br></h4>
+
+- 貴重品は各自で管理してください<br>
+- 盗難・紛失については、当実行委員会では責任を負いかねます<br>
+- クロークでは貴重品のお預かりはできません<br>
+<h4>迷子・はぐれた場合<br></h4>
+
+- 会場内のインフォメーションセンターにお越しください<br>
+- お子様とはぐれた場合も、インフォメーションセンターにご連絡ください<br>
+<h4>緊急時の対応<br></h4>
+
+- 地震や火災などの緊急時は、スタッフの指示に従って避難してください<br>
+- 緊急避難場所は会場マップに記載しています<br>
+<h4>お子様連れの方へ<br></h4>
+
+- 小学生以下のお子様は、保護者同伴でお願いいたします<br>
+- お子様から目を離さないようご注意ください<br>
+- 授乳室・おむつ交換スペースをご用意しています(場所は会場マップをご確認ください)<br>
+体の不自由な方へ<br>
+- 車椅子専用の観覧エリアをご用意しています<br>
+- 事前に公式サイトのお問い合わせフォームからご連絡いただけますと、スムーズにご案内できます<br>
+- 介助が必要な場合は、お気軽にスタッフまでお声がけください<br>
+<h4>落とし物・忘れ物<br></h4>
+
+- 会場で拾得した落とし物は、インフォメーションセンターでお預かりしています<br>
+- イベント終了後は事務局で1週間保管いたします<br>
+- お心当たりのある方は、公式サイトのお問い合わせフォームからご連絡ください<br>
+<h4>最新情報の確認<br></h4>
+
+- 当日の注意事項、出演時間の変更などは、公式サイトおよびSNSでお知らせします<br>
+- ご来場前に必ず最新情報をご確認ください<br>
+
+---<br>
+<h3 id="mana-">会場での過ごし方(マナー)<br></h3>
+<h4>音楽を楽しむために<br></h4>
+
+- 前の方で観覧したい方は早めにお越しください<br>
+- 途中で前方へ移動する際は、周りの方にひと声おかけください<br>
+- 後ろの方の視界を遮らないよう、ご配慮をお願いします<br>
+<h4>周りの方への配慮<br></h4>
+
+- 大声での長時間の会話はお控えください<br>
+- 通路を塞がないようご注意ください<br>
+- 列に並ぶ際は、割り込みをしないでください<br>
+<h4>体調管理<br></h4>
+
+- 無理をせず、疲れたら休憩してください<br>
+- 飲酒される方は、飲み過ぎにご注意ください<br>
+- 体調が悪くなった場合は、すぐにスタッフまでお知らせください<br>
+
+---<br>
+<h3 id="otoiawase">お問い合わせ<br></h3>
+
+
+ご不明な点がございましたら、お気軽にお問い合わせください。<br>
+
+- お問い合わせフォーム(contact.html)<br>
+- メールアドレス：info@springmusicfes2026.example.com(架空)<br>
+- 受付時間：平日 10:00〜17:00<br>
+
+---<br>
+<h3>皆様のご来場を心よりお待ちしております！<br>
+
+</h3>
+Spring Music Festival 2026実行委員会<br>
+
+        </div>
+    
+    </div>
+
+   <footer>
+        <nav>
+            <ul>
+                <li><a href="faq.html">よくある質問</a></li>
+                <li><a href="access.html">会場案内</a></li>
+                <li><a href="contact.html">お問い合わせフォーム</a></li>
+                <li><a href="privacy.html">プライバシーポリシー</a></li>
+            </ul>
+        </nav>
+    </footer>
+</body>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
+    crossorigin="anonymous"></script>
+
+</html>
